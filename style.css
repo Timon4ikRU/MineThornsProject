@@ -236,10 +236,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
+    background: linear-gradient(45deg, rgba(30, 60, 30, 0.3), rgba(20, 40, 20, 0.3));
     z-index: 1;
 }
 
@@ -520,12 +517,69 @@ header {
     min-height: 25px;
 }
 
+/* Social Links Section */
+.social-links {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.link-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.tg-btn {
+    background-color: #0088cc;
+    color: white;
+}
+
+.tg-btn:hover {
+    background-color: #006699;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.max-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.max-btn:hover {
+    background-color: var(--dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .join-note {
     text-align: center;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     border-left: 5px solid var(--primary-color);
+    margin-top: 40px;
 }
 
 .join-note i {
@@ -621,6 +675,30 @@ footer {
     opacity: 0.8;
 }
 
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
@@ -682,6 +760,16 @@ footer {
     
     .about-features {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .link-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-btn {
+        width: 100%;
+        max-width: 300px;
     }
 }
 

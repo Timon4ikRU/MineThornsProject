@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineThorns Project | Сервер Minecraft 1.20.1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/9a/Block_of_Emerald_%28texture%29_JE4.png">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <h1>MineThorns</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Главная</a></li>
+                    <li><a href="#about" class="nav-link">О сервере</a></li>
+                    <li><a href="#features" class="nav-link">Особенности</a></li>
+                    <li><a href="#rules" class="nav-link">Правила</a></li>
+                    <li><a href="#how-to-join" class="nav-link">Как присоединиться</a></li>
+                    <li><a href="#staff" class="nav-link">Команда</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Добро пожаловать на <span class="highlight">MineThorns Project</span></h2>
+                <p class="hero-subtitle">Ванильный сервер Minecraft 1.20.1 с дружным сообществом!</p>
+                <div class="server-info">
+                    <div class="info-box">
+                        <i class="fas fa-users"></i>
+                        <div class="info-text">
+                            <h3>Онлайн: <span id="online-count">мало</span>/20</h3>
+                            <p>Игроков онлайн</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-server"></i>
+                        <div class="info-text">
+                            <h3>Версия: 1.20.1</h3>
+                            <p>Java Edition</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-map"></i>
+                        <div class="info-text">
+                            <h3>Без границ</h3>
+                            <p>Свободное исследование</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#how-to-join" class="btn btn-primary">Присоединиться</a>
+                    <a href="#features" class="btn btn-secondary">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">О сервере <span class="highlight">MineThorns</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>MineThorns Project — это ванильный сервер Minecraft версии 1.20.1 с небольшими улучшениями для комфортной игры. </br>Мы стремимся создать дружелюбное сообщество игроков, где каждый найдет себе занятие по душе.</p>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>24/7?</h4>
+                            <p>Пока только в наших мечтах. Но мы очень надеемся что в скором времени всё будет так!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="mc-block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Особенности сервера</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Экономика</h3>
+                    <p>Сбалансированная экономическая система с возможностью торговать с другими игроками золотом/железом/алмазами/незеритом. </br> При обмане есть возможность обратиться к админам и заставить вернуть украденнное силой :).</p>
+                    <p>Курс валют: </br>1 незерит = 10 алмазов </br>1 алмаз = 10 золота </br> 1 золото = 10 железа, или 5 изумрудов </br>1 изумруд = 2 железа (32 угля или 16 меди))</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Совместная игра</h3>
+                    <p>Создавайте команды, стройте вместе и развивайтесь в компании друзей.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Поддержка сообщества</h3>
+                    <p>Мы всегда готовы помочь новым игрокам и выслушать предложения по улучшению сервера.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="section">
+        <div class="container">
+            <h2 class="section-title">Основные правила</h2>
+            <div class="rules-container">
+                <div class="rule">
+                    <div class="rule-number">1</div>
+                    <div class="rule-content">
+                        <h3>Уважайте других игроков</h3>
+                        <p>Оскорбления, провокации и любые формы дискриминации запрещены.</p>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-number">2</div>
+                    <div class="rule-content">
+                        <h3>Без читов и багов</h3>
+                        <p>Использование читов, кликеров и эксплуатация багов строго запрещены.</p>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-number">3</div>
+                    <div class="rule-content">
+                        <h3>Гриферство запрещено</h3>
+                        <p>Разрушение и воровство с чужих территорий без разрешения владельца карается баном.</p>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-number">4</div>
+                    <div class="rule-content">
+                        <h3>Спам и реклама</h3>
+                        <p>Запрещен спам в чате и реклама других проектов.</p>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-number">5</div>
+                    <div class="rule-content">
+                        <h3>Адекватные ники и скины</h3>
+                        <p>Запрещены ники и скины, содержащие нецензурную лексику или оскорбительный контент.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rules-note">
+                <p><i class="fas fa-exclamation-triangle"></i> За нарушение правил возможны предупреждения, муты или бан в зависимости от тяжести нарушения.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Join Section -->
+    <section id="how-to-join" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Как присоединиться</h2>
+            <div class="join-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Установите Minecraft Java 1.20.1</h3>
+                    <p>Убедитесь, что у вас установлена версия игры 1.20.1</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Добавьте сервер в список</h3>
+                    <p>В меню Minecraft зайдите в "Сетевая игра" → "Добавить сервер"</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Введите данные сервера</h3>
+                    <p>Адрес сервера: <span class="server-address">*****E0eC.aternos.me</span></p>
+                    <div class="copy-button-container">
+                        <button id="copyIP" class="copy-btn">
+                            <i class="fas fa-copy"></i> Скопировать IP сервера (наверху под *** ничего нету, только звёздочки, честно!)
+                        </button>
+                        <div id="copy-message" class="copy-message"></div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Наслаждайтесь игрой!</h3>
+                    <p>Подключайтесь и начинайте играть на нашем сервере</p>
+                </div>
+            </div>
+            <div class="join-note">
+                <p><i class="fas fa-info-circle"></i> Если возникли проблемы с подключением, свяжитесь с администрацией.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff" class="section">
+        <div class="container">
+            <h2 class="section-title">Команда сервера</h2>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <div class="staff-avatar">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>LoVe_MoPS</h3>
+                    <p class="staff-role">Владелец сервера</p>
+                    <p>Основатель проекта и главный администратор</p>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-avatar">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>LoVe_MoPS, BunkerKubika</h3>
+                    <p class="staff-role">Главный модератор</p>
+                    <p>Отвечает за порядок на сервере и помощь игрокам</p>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-avatar">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>LoVe_MoPS</h3>
+                    <p class="staff-role">Технический администратор</p>
+                    <p>Поддерживает работоспособность сервера и плагинов</p>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-avatar">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>BunkerKubika</h3>
+                    <p class="staff-role">Строитель</p>
+                    <p>Создает общественные постройки и помогает с оформлением</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>MineThorns Project</h3>
+                    <p>Сервер Minecraft 1.20.1</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#rules">Правила</a></li>
+                        <li><a href="#how-to-join">Подключиться</a></li>
+                        <li><a href="#staff">Команда</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Связь с нами</h4>
+                    <p>По всем вопросам обращайтесь к администрации сервера</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MineThorns Project. Minecraft является товарным знаком Mojang AB.</p>
+                <p>Это неофициальный фан-сайт. Мы не связаны с Mojang или Microsoft.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
